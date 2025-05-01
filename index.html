@@ -5,21 +5,34 @@
   <meta charset="UTF-8">
   <title>Bundle & Save</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
   <div class="bundle-box">
     <div class="line-with-text">
       <span>Bundle & Save</span>
     </div>
 
     <div class="option" data-price="195">
-      <label>1 Pair<br>DKK 195.00 — <strong>50% OFF</strong></label>
+      <div class="flexbox">
+        <div class="flexbox">
+          <div class="circle">
+            <div class="dot"></div>
+          </div>
+          <span>
+            <label>1 Pair</label>
+            <label><b>DKK 195.00</b></label>
+          </span>
+        </div>
+        <label><b>50% OFF</b></label>
+      </div>
       <div class="dropdowns-container">
         <div class="dropdowns">
+          <span class="small-tags">#1</span>
           <select>
-            <option>Size</option>
+            <option>S</option>
             <option>#5</option>
             <option>#6</option>
           </select>
@@ -30,8 +43,9 @@
           </select>
         </div>
         <div class="dropdowns">
+          <span class="small-tags">#2</span>
           <select>
-            <option>Size</option>
+            <option>S</option>
             <option>#5</option>
             <option>#6</option>
           </select>
@@ -45,12 +59,26 @@
     </div>
 
     <div class="option selected" data-price="360">
-      <div class="most-popular">Most Popular</div>
-      <label>2 Pair<br>DKK 360.00 — <strong>40% OFF</strong></label>
+      <div class="flexbox">
+        <div class="flexbox">
+          <div class="circle">
+            <div class="dot"></div>
+          </div>
+          <span>
+            <label>2 Pair</label>
+            <label><b>DKK 360.00</b></label>
+          </span>
+        </div>
+        <div>
+          <span class="tags">Most Popular</span>
+          <label><b>40% OFF</b></label>
+        </div>
+      </div>
       <div class="dropdowns-container">
         <div class="dropdowns">
+          <span class="small-tags">#1</span>
           <select>
-            <option>Size</option>
+            <option>S</option>
             <option>#5</option>
             <option>#6</option>
           </select>
@@ -61,8 +89,9 @@
           </select>
         </div>
         <div class="dropdowns">
+          <span class="small-tags">#2</span>
           <select>
-            <option>Size</option>
+            <option>S</option>
             <option>#5</option>
             <option>#6</option>
           </select>
@@ -76,11 +105,23 @@
     </div>
 
     <div class="option" data-price="528">
-      <label>3 Pair<br>DKK 528.00 — <strong>60% OFF</strong></label>
+      <div class="flexbox">
+        <div class="flexbox">
+          <div class="circle">
+            <div class="dot"></div>
+          </div>
+          <span>
+            <label>3 Pair</label>
+            <label><b>DKK 528.00</b></label>
+          </span>
+        </div>
+        <label><b>60% OFF</b></label>
+      </div>
       <div class="dropdowns-container">
         <div class="dropdowns">
+          <span class="small-tags">#1</span>
           <select>
-            <option>Size</option>
+            <option>S</option>
             <option>#5</option>
             <option>#6</option>
           </select>
@@ -91,8 +132,9 @@
           </select>
         </div>
         <div class="dropdowns">
+          <span class="small-tags">#2</span>
           <select>
-            <option>Size</option>
+            <option>S</option>
             <option>#5</option>
             <option>#6</option>
           </select>
@@ -106,11 +148,10 @@
     </div>
 
     <div class="flexbox">
-      <div class="shipping-note">Free 2 Day Shipping</div>
-      <div class="total">Total: <strong id="total-amount">DKK 360.00</strong></div>
+      <div class="tags">Free 2 Day Shipping</div>
+      <div class="total"><label class="small-tags">Total:</label> <strong id="total-amount">DKK 360.00</strong></div>
     </div>
-    <button>Add to Cart</button>
+    <button> + Add to Cart</button>
   </div>
 </body>
-
 </html>

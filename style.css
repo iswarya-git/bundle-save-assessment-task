@@ -1,120 +1,146 @@
 body {
-  font-family: Arial, sans-serif;
-  background: #f9f9f9;
-  display: flex;
-  justify-content: center;
-  padding: 50px;
-}
-
-.line-with-text {
-  text-align: center;
-  border-bottom: 1px solid #ddd;
-  line-height: 0.1em;
-  margin: 20px 0;
-}
-
-.line-with-text span {
-  background: #fff;
-  padding: 0 10px;
-  color: #1f8d66;
-  font-weight: 600;
-}
-
-.bundle-box {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  width: 320px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.bundle-box h2 {
-  text-align: center;
-  margin-bottom: 20px;
-  font-size: 18px;
-  color: #6ecfad;
-}
-
-.option {
-  border: 1px solid #ccc;
-  padding: 15px;
-  border-radius: 8px;
-  margin-top: 15px;
-  cursor: pointer;
-  position: relative;
-}
-
-.option.selected {
-  border-color: #2a7a5e;
-  background: #e6f4f1;
-}
-
-.most-popular {
-  position: absolute;
-  right: 10px;
-  background: #2a7a5e;
-  color: white;
-  font-size: 10px;
-  padding: 3px 6px;
-  border-radius: 4px;
-}
-
-.option label {
-  font-weight: bold;
-  display: block;
-  margin-bottom: 5px;
-}
-
-.dropdowns {
-  display: flex;
-  gap: 10px;
-  margin-top: 10px;
-}
-
-select {
-  flex: 1;
-  padding: 5px;
-}
-
-.dropdowns-container {
-  display: none;
-}
-
-.option.selected .dropdowns-container {
-  display: block;
-}
-
-.total {
-  text-align: center;
-  margin: 15px 0;
-  font-weight: bold;
-}
-
-button {
-  width: 100%;
-  background: #2a7a5e;
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #256c54;
-}
-
-.shipping-note {
-  font-size: 12px;
-  color: gray;
-  text-align: center;
+    font-family: 'Inter', sans-serif;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
 }
 
 .flexbox {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+.line-with-text {
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    line-height: 0.1em;
+    margin: 30px 0;
+}
+
+.line-with-text span {
+    background: #fff;
+    padding: 0 10px;
+    color: #1f8d66;
+    font-weight: 600;
+}
+
+.bundle-box {
+    background: #fff;
+    /* border: 1px solid #ddd; */
+    border-radius: 10px;
+    width: 320px;
+    padding: 20px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
+.bundle-box h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #6ecfad;
+}
+
+.option {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 15px;
+    cursor: pointer;
+    position: relative;
+}
+
+.option.selected {
+    border-color: #2a7a5e;
+    background: #e6f4f1;
+}
+
+.tags {
+    color: #38ab83;
+    font-size: 10px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.small-tags {
+    font-size: 13px;
+}
+
+.option label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.dropdowns {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+select {
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #e0dede;
+}
+
+.dropdowns-container {
+    display: none;
+}
+
+.option.selected .dropdowns-container {
+    display: block;
+}
+
+.total {
+    text-align: center;
+    margin: 15px 0;
+}
+
+button {
+    width: 100%;
+    background: #2a7a5e;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #256c54;
+}
+
+.shipping-note {
+    font-size: 12px;
+    color: gray;
+    text-align: center;
+}
+
+.circle {
+    width: 10px;
+    height: 10px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.dot {
+    width: 7px;
+    height: 7px;
+    background-color: #0a412e;
+    border-radius: 50%;
+    display: none;
+}
+
+.option.selected .dot {
+    display: block;
+}
